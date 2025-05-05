@@ -10,14 +10,19 @@ footer, header{
     font-family: 'Goudy Stout', serif;
 }
 
-.col-md-2{
+.col-md-3{
     background-image: url(./Hatter.jfif);
     background-repeat: no-repeat;
     background-size: cover;
     border: solid black 4px;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;         
+    justify-content: center;     
 }
 
-.col-md-8{
+.col-md-9{
 border-bottom: solid black 4px;
 border-top: solid black 4px;
 }
@@ -29,6 +34,7 @@ a{
 .nav{
     text-align: center;
     justify-content: center;
+    margin: 30% 0;
 }
 
 h1{
@@ -47,18 +53,18 @@ h2{
 p{
     text-align: justify;
     font-family: 'Times New Roman', Times, serif;
+    font-size: large;
 }
 
 nav ul li{
     border-bottom: 2px solid #333;
     padding-bottom: 4px;
-    font-size: larger;
+    font-size: x-large;
     color: black;
 }
 
 nav ul li:first-child{
     border-top:2px solid #333 ;
-    margin-top: 100%;
 }
 
 footer{
@@ -69,7 +75,44 @@ img{
     max-width: 100%;
 }
 
-.col-md-2 img:first-child{
-    margin-top: 80%;
-    margin-bottom: 80%;
-}
+form {
+    background: white;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .checkbox-group, .radio-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+  }
+
+  button {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.2rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .flip{
+    transform: scaleX(-1);
+  }

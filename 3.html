@@ -14,7 +14,8 @@
 </header>
 
 <div class="row">
-  <div class="col-md-2">
+  <div class="col-md-3">
+    <img src="./3 kép.jpeg" alt="kep" class="rounded-circle">
     <nav class> 
         <ul class="nav flex-column">
             <li class="nav-item"><a class="nav-link text-white" href="./index.html">Bevezetés a mesterséges intelligenciába</a></li>
@@ -23,17 +24,50 @@
             <li class="nav-item"><a class="nav-link text-white" href="./3.html">Űrlap</a></li>
         </ul>
     </nav>
+    <img src="./3 kép 2.jpeg" alt="kep" class="rounded-circle">
 </div>
-<div class="col-md-8">
+<div class="col-md-6">
+  <form>
+    <h2>MI Kérdőív:</h2>
 
+    <label for="name">Neved:</label>
+    <input type="text" id="name" name="name" required />
 
+    <label for="email">Email címed:</label>
+    <input type="email" id="email" name="email" required />
+   
+    <label for="usage">Használtál már mesterséges intelligenciát?</label>
+    <select id="usage" name="usage">
+      <option value="soha">Soha</option>
+      <option value="kipróbáltam">Kipróbáltam már</option>
+      <option value="gyakran">Gyakran használom</option>
+    </select>
 
+    <label>Melyik MI alkalmazás a legérdekesebb számodra?</label>
+    <div class="radio-group">
+      <label><input type="radio" name="favorite_ai" value="chatgpt" /> ChatGPT</label>
+      <label><input type="radio" name="favorite_ai" value="midjourney" /> MidJourney</label>
+      <label><input type="radio" name="favorite_ai" value="deepfake" /> Deepfake technológia</label>
+      <label><input type="radio" name="favorite_ai" value="egyéb" /> Egyéb</label>
+    </div>
 
+    <label>Mire használnád az MI-t? (Több válasz is lehetséges)</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="uses" value="tanulás" /> Tanulás</label>
+      <label><input type="checkbox" name="uses" value="munka" /> Munka</label>
+      <label><input type="checkbox" name="uses" value="szórakozás" /> Szórakozás</label>
+      <label><input type="checkbox" name="uses" value="egyéb" /> Egyéb</label>
+    </div>
+
+    <label for="opinion">Mi a véleményed a mesterséges intelligencia jövőjéről?</label>
+    <textarea id="opinion" name="opinion" rows="5" placeholder="Írd le a gondolataid..."></textarea>
+
+    <button type="submit" class="btn btn-info">Beküldés</button>
+  </form>
 
 </div>
-<div class="col-md-2">
-  <img src="./3 kép.jpeg" alt="kep" class="rounded-circle">
-  <img src="./3 kép 2.jpeg" alt="kep" class="rounded-circle">
+<div class="col-md-3">
+  <img src="./3_tall.png" alt="kep" class="rounded-circle flip">
 </div>
 </div>
 <footer class="container-fluid">
